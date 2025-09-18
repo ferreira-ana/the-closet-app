@@ -1,0 +1,58 @@
+@import "./base.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+strong {
+  font-weight: 500;
+}
+/******************************/
+/* Below (84*16) 1200px landscape tablets*/
+/******************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px ou seja 1 rem=9px */
+    font-size: 56.25%;
+  }
+}
+/******************************/
+/* Below  976px (tablets)*/
+/******************************/
+@media (max-width: 61em) {
+  html {
+    /* 8px/16px =0.5=50% */
+    font-size: 50%;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+/******************************/
+/* Below  704px (smaller tablets)*/
+/******************************/
+@media (max-width: 44em) {
+  h2 {
+    font-size: 3rem;
+  }
+}
